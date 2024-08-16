@@ -1,6 +1,6 @@
-import { Item } from '@/app/index';
 import { View, StyleSheet, Text, Image } from 'react-native';
 import { Link } from 'expo-router';
+import { Item } from '@/types/items';
 
 export function StoreItem({ item }: { item: Item }) {
   function getItemImage() {

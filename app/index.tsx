@@ -1,16 +1,8 @@
 import { StoreItem } from '@/components/StoreItem';
+import { Item } from '@/types/items';
 import { useEffect, useState } from 'react';
 import { Button, Text, View, FlatList } from 'react-native';
-// import { ScrollView } from 'react-native-gesture-handler';
 const url = 'https://twelveminusfive-shopping-e161e385765b.herokuapp.com/api/aldi/items';
-
-export type Item = {
-  id: number;
-  description: string;
-  amount: number;
-  imageLink: string;
-  units: string;
-};
 
 export default function Index() {
   const [data, setData] = useState<Item[]>([]);
